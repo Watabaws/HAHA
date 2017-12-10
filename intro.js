@@ -1,3 +1,10 @@
+/*
+Adam Abbas and Holden Higgins - HAHA
+SoftDev1 pd7
+K16 -- DOMinating JS
+2017-12-11
+*/
+
 ctr = 8;
 
 var button_push = function(e){
@@ -26,6 +33,7 @@ var backToNorm = function(e){
 }
 var outtaDaDOM = function(e){
   this.remove();
+  //  ctr--
 }
 
 var listItems = document.getElementsByTagName("li");
