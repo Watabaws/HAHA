@@ -6,6 +6,7 @@ K16 -- DOMinating JS
 */
 
 var fib_num = 1;
+var edig = 0;
 var ctr = 8;
 
 var button_push = function(e){
@@ -57,9 +58,24 @@ var addFib = function(){
   var lisht = document.getElementById("fibList");
   var fibLi = document.createElement("li")
   fibLi.innerHTML = fibonacci(fib_num);
-  fib_num++;
+  fib_num ++;
   lisht.appendChild(fibLi);
+}
+
+var the_e = function(){
+  edig++;
+  return Math.pow((1 + (1/edig)), edig);
+}
+
+var addE = function(){
+  var lisht = document.getElementById("elist");
+  var eLi = document.createElement("li");
+  eLi.innerHTML = the_e();
+  lisht.appendChild(eLi);
 }
 
 var button2 = document.getElementById("c");
 button2.addEventListener("click", addFib);
+
+var ebutton = document.getElementById("e");
+ebutton.addEventListener("click", addE);
